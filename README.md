@@ -33,12 +33,13 @@ Este repositorio contiene tres proyectos que juntos forman una aplicación compl
   ```
 ![Página postman API REST](./imagenes/Screenshot%2024-08-31%232627.png)
 
+
 ### 2. Inicializar el Frontend
 ```bash
 cd frontend
 npm install
 npm start
-
+```
 ## Capturas de Pantalla
 ### Página Principal
 ![Página Principal](./imagenes/Screenshot%202024-08-31%20231552.png)
