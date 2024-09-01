@@ -1,0 +1,27 @@
+package ec.edu.espe.graphql.entities;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+public class Proyecto {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String nombre;
+
+    private String descripcion;
+
+    @OneToMany(mappedBy = "proyecto")
+    private List<Tarea> tareas;
+}

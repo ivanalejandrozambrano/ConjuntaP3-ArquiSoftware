@@ -1,0 +1,99 @@
+type Mutation{
+    guardarProducto(productoRequest:ProductoRequest):Producto,
+    actualizarProducto(id:Int,productoRequest:ProductoRequest):Producto,
+    eliminarProducto(id : Int) : String
+
+    guardarEmpleado(empleadoRequest: EmpleadoRequest): Empleado
+    actualizarEmpleado(id: Int, empleadoRequest: EmpleadoRequest): Empleado
+    eliminarEmpleado(id: Int): String
+
+    guardarProyecto(proyectoRequest: ProyectoRequest): Proyecto
+    actualizarProyecto(id: Int, proyectoRequest: ProyectoRequest): Proyecto
+    eliminarProyecto(id: Int): String
+
+
+}
+type Query{
+    listarProductos:[Producto],
+    listarProductoPorId(id:Int):Producto,
+    listarCategorias:[Categoria]
+    listarCategoriaPorId(id:Int):Categoria
+
+
+    listarEmpleados: [Empleado]
+    listarEmpleadoPorId(id: Int): Empleado
+
+    listarProyectos: [Proyecto]
+    listarProyectoPorId(id: Int): Proyecto
+}
+
+type Producto{
+    id:Int,
+    nombre: String,
+    precio:Float,
+    stock:Int,
+    categoria: Categoria
+}
+
+type Categoria{
+    id:Int,
+    name:String,
+    productos: [Producto]
+}
+
+
+type Empleado {
+    id: Int
+    nombre: String
+    email: String
+    tareas: [Tarea]
+}
+
+type Proyecto {
+    id: Int
+    nombre: String
+    descripcion: String
+    tareas: [Tarea]
+}
+
+type Tarea {
+    id: Int
+    nombre: String
+    descripcion: String
+    proyecto: Proyecto
+    empleados: [Empleado]
+}
+
+
+
+
+
+
+
+input ProductoRequest{
+    nombre: String,
+    precio:Float,
+    stock:Int,
+    categoriaId:Int
+}
+
+
+
+
+
+input EmpleadoRequest {
+    nombre: String
+    email: String
+}
+
+input ProyectoRequest {
+    nombre: String
+    descripcion: String
+}
+
+input TareaRequest {
+    nombre: String
+    descripcion: String
+    proyectoId: Int
+    empleadoIds: [Int]
+}
