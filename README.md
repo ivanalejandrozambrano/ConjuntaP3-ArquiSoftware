@@ -31,7 +31,7 @@ Este repositorio contiene tres proyectos que juntos forman una aplicación compl
   mvn clean install
   mvn spring-boot:run
   ```
-![Página postman API REST](./imagenes/Screenshot%2024-08-31%232627.png)
+![Página postman API REST](./imagenes/Screenshot%202024-08-31%20232627.png)
 
 
 ### 2. Inicializar el Frontend
@@ -43,14 +43,15 @@ npm start
 
 ## Capturas de Pantalla
 ### Página Principal
-![Página Principal](./imagenes/Screenshot%2024-08-31%231043.png)
+![Página Principal](./imagenes/Screenshot%202024-08-31%20231043.png)
 
 ### Página de Tareas
-![Lista de Tareas](./imagenes/Screenshot%2024-08-31%231330.png)
+![Lista de Tareas](./imagenes/Screenshot%202024-08-31%20231330.png)
 
 ### Página de Proyectos
-![Lista de Proyectos](./imagenes/Screenshot%2024-08-31%231019.png)
+![Lista de Proyectos](./imagenes/Screenshot%202024-08-31%20231019.png)
+
 
 ### Página de Empleados
-![Lista de Empleados](./imagenes/Screenshot%202024-08-31%20231019.png)
+![Lista de Empleados](./imagenes/Screenshot%202024-08-31%20231119.png)
 
