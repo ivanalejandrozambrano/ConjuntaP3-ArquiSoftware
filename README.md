@@ -40,6 +40,7 @@ cd frontend
 npm install
 npm start
 ```
+
 ## Capturas de Pantalla
 ### Página Principal
 ![Página Principal](./imagenes/Screenshot%202024-08-31%20231552.png)
