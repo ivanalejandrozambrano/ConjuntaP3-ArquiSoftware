@@ -43,7 +43,7 @@ npm start
 
 ## Capturas de Pantalla
 ### Página Principal
-![Página Principal](./imagenes/Screenshot%202024-08-31%20231552.png)
+![Página Principal](./imagenes/Screenshot%2024-08-31%231043.png)
 
 ### Página de Tareas
 ![Lista de Tareas](./imagenes/Screenshot%2024-08-31%231330.png)
