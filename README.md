@@ -1,4 +1,7 @@
 # ConjuntaP3-ArquiSoftware
+
+Integrenates: Ivan Zambrano
+
 Este repositorio contiene tres proyectos que juntos forman una aplicación completa para la gestión de tareas, proyectos y empleados.
 
 ## Estructura del Proyecto
